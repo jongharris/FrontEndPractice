@@ -1,0 +1,155 @@
+* {
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/bg-pattern-top-desktop.svg') no-repeat cover;
+    font-family: 'Spartan', sans-serif;
+    background-color: rgb(243, 243, 243);
+    font-size: 15px;
+
+}
+.wrapper {
+    background: white;
+    margin-top: 10%;
+    margin-left: 5%;
+    display: grid;
+    grid-gap: 10px;
+    padding: 7%;
+    width: 1300px;
+}
+
+h3 {
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan';
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.name {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.user-type {
+    font-weight: 400;
+    color: hsl(333, 53%, 54%);
+}
+
+.card {
+    flex: 0 0 27%;
+    background-color: hsl(300, 43%, 22%);
+    padding: 45px 30px;
+    border-radius: 3%;
+    box-shadow: 0 4px 2px -2px gray;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+p {
+    font-weight: 200;
+}
+
+.card-body {
+    color: rgb(197, 160, 197);
+    font-weight: 500;
+}
+
+.profile-container {
+    flex: 0 0 20%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.profile-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-img img {
+    width: 40px;
+    height: auto;
+}
+
+.title-info {
+    flex: 0 0 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; 
+}
+
+.testimonials {
+    margin-top: 3%;
+}
+
+.ratings {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.rating-card {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-weight: 500;
+    color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 5%;
+    width: 325px;
+}
+
+.stars {
+    flex: 0 0 35%;
+}
+
+.rating-text {
+    flex: 0 0 65%;
+}
+/* Desktop */
+@media only screen and (min-width: 375px) {
+
+    .info {
+        font-size: 15px;
+        grid-column: 1/5;
+        grid-row: 1/2;
+        color: hsl(303, 10%, 53%);
+        font-weight: 400;
+    }
+
+    .ratings {
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        grid-column: 5/9;
+        grid-row: 1/2;
+    }
+
+    .testimonials {
+        grid-column: 1/9;
+        grid-row: 2/2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+    }
+
+
+}
